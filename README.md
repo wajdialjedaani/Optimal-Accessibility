@@ -165,3 +165,4 @@ For more information about the `unittest` library, please refer to the documenta
 [here](https://docs.python.org/3/library/unittest.html)
 
 ### GitHub actions/workflows
+A single GitHub action, `main.yml` both lints and runs all the unit tests. If and only if both the linting and all the unit tests pass will the GitHub action pass. 
