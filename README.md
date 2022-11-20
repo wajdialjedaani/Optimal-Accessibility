@@ -122,14 +122,14 @@ immediately.
 All test files will be named in the following format. The name of the file you are writing 
 the unit tests for followed by the `.test.py` extension. This extension lets the GitHub 
 action know it's a testing file. For example, if you are testing functions inside the 
-`colorAnaysis.py` file, the unit test file would be `colorAnaysis.test.py`. Make sure to 
+`colorAnaysis.py` file, the unit test file would be `colorAnaysis_test.py`. Make sure to 
 import `unittest` at the top of each test file. 
 
 #### Unit tests
 All unit test methods will start with the `test_` prefix. Therefore, a proper unit test 
 method name for a unit test to test the text recognition abilities would be 
 `test_textRecognition(self)`. The test class should be a child class of the 
-`unittest. TestCase` class. A contributor should create one test class per new test file. 
+`unittest.TestCase` class. A contributor should create one test class per new test file. 
 The class name should start with `Test` followed by the name of the category of functions 
 it's testing. At the end of the file, make sure to call `unittest.main()` to automatically 
 run all the unit tests once that file is called run. For an example of a good test file 
@@ -137,7 +137,7 @@ see the section below.
 
 ##### Test file with basic unit tests example
 ```python
-# Filename: src/Foo.test.py
+# Filename: src/Foo_test.py
 
 import unittest
 
@@ -165,4 +165,5 @@ For more information about the `unittest` library, please refer to the documenta
 [here](https://docs.python.org/3/library/unittest.html)
 
 ### GitHub actions/workflows
-A single GitHub action, `main.yml` both lints and runs all the unit tests. If and only if both the linting and all the unit tests pass will the GitHub action pass. 
+A single GitHub action, `main.yml` both lints and runs all the unit tests. 
+If and only if both the linting and all the unit tests pass will the GitHub action pass. 
