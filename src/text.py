@@ -1,3 +1,2 @@
-
 def foo() -> str:
-    return "FOO";
+    return "FOO"

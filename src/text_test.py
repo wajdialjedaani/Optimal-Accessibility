@@ -1,4 +1,5 @@
 import unittest
+from text import *;
 
 class TestStringMethods(unittest.TestCase):
 
@@ -15,6 +16,11 @@ class TestStringMethods(unittest.TestCase):
         # check that s.split fails when the separator is not a string
         with self.assertRaises(TypeError):
             s.split(2)
+    
+    def test_Foo(self):
+        myFooStr = foo()
+        self.assertEqual(myFooStr, "FOO")
+
 
 if __name__ == '__main__':
     unittest.main()
